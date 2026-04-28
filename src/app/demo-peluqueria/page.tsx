@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "Demo peluquería | OriuWeb",
   description:
     "Demo estática de página web para peluquería o barbería creada por OriuWeb.",
+  alternates: {
+    canonical: "https://oriuweb.es/demo-peluqueria",
+  },
+  openGraph: {
+    title: "Demo peluquería | OriuWeb",
+    description:
+      "Ejemplo visual de una página web para peluquería o barbería creada por OriuWeb.",
+    url: "https://oriuweb.es/demo-peluqueria",
+    type: "website",
+  },
 };
 
 const WHATSAPP_DEMO =
