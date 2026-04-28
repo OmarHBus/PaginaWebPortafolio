@@ -336,11 +336,11 @@ export default function DemoPeluqueriaPage() {
                     Detalles del local
                   </div>
                   <div className="mt-4 flex h-48 items-center justify-center rounded-2xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] text-sm font-semibold text-[#5F5146]">
-                    Foto del local (placeholder)
+                    Interior de Barbería Nova
                   </div>
                   <div className="mt-6 text-sm text-[#5F5146]">
-                    Este bloque es un placeholder fácil de sustituir por una foto real desde{" "}
-                    <span className="font-semibold text-[#241C17]">/public</span>.
+                    Un espacio cómodo, cuidado y pensado para que desconectes un
+                    rato mientras te arreglamos el corte o la barba.
                   </div>
                 </div>
               </div>
@@ -406,12 +406,18 @@ export default function DemoPeluqueriaPage() {
                   key={name}
                   className="rounded-[2rem] border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] p-6 shadow-[0_18px_45px_rgba(36,28,23,0.10)]"
                 >
-                  <div className="h-44 rounded-2xl border border-[rgba(36,28,23,0.10)] bg-gradient-to-br from-[#F7EBDD] via-[#FFF8F0] to-[#F2E2CF] p-5">
-                    <div className="text-sm font-semibold text-[#241C17]">
-                      Foto del barbero
+                  <div className="relative flex h-44 items-end justify-between overflow-hidden rounded-2xl border border-[rgba(36,28,23,0.10)] bg-gradient-to-br from-[#F7EBDD] via-[#FFF8F0] to-[#F2E2CF] p-5">
+                    <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[#C49A45]/15 blur-3xl" />
+                    <div>
+                      <div className="text-xs font-semibold text-[#5F5146]">
+                        {role}
+                      </div>
+                      <div className="mt-2 text-4xl font-semibold tracking-tight text-[#241C17]">
+                        {name.charAt(0)}
+                      </div>
                     </div>
-                    <div className="mt-2 text-sm text-[#5F5146]">
-                      Placeholder (fácil de sustituir)
+                    <div className="text-sm font-semibold text-[#241C17]">
+                      {name}
                     </div>
                   </div>
                   <div className="mt-5 flex items-center justify-between gap-3">
@@ -482,7 +488,7 @@ export default function DemoPeluqueriaPage() {
             <SectionTitle
               kicker="Galería"
               title="Galería"
-              text="Imágenes de ejemplo (placeholders) con un estilo cálido."
+              text="Una selección de estilos y detalles del local."
             />
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
