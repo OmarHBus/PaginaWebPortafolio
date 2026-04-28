@@ -288,18 +288,21 @@ export default function DemoPeluqueriaPage() {
               title="Carta de precios"
               text="Precios ficticios para la demo."
             />
-            <div className="mt-10 rounded-[2rem] border border-white/10 bg-[#2B2A28] p-6 shadow-[0_22px_65px_rgba(43,42,40,0.22)] sm:p-8">
+            <div className="mt-10 rounded-[2rem] border border-[rgba(36,28,23,0.10)] bg-gradient-to-b from-[#F7EBDD] to-[#F2E2CF] p-6 shadow-[0_18px_45px_rgba(36,28,23,0.12)] sm:p-8">
               <div className="mb-6 flex items-center justify-between gap-6">
                 <div>
-                  <div className="text-xs font-semibold tracking-widest text-[#FFF8EC]/85">
+                  <div className="text-xs font-semibold tracking-widest text-[#5F5146]">
                     BARBERÍA NOVA
                   </div>
-                  <div className="mt-2 text-2xl font-semibold text-[#FFF8EC]">
+                  <div className="mt-2 text-2xl font-semibold text-[#241C17]">
                     Servicios y precios
                   </div>
                 </div>
-                <div className="hidden rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-sm font-semibold text-[#D8AE62] sm:block">
-                  Orihuela · 4.9 ★★★★★
+                <div className="hidden rounded-2xl border border-[rgba(36,28,23,0.10)] bg-[#EFE0CC] px-4 py-3 text-sm font-semibold text-[#241C17] sm:block">
+                  Orihuela ·{" "}
+                  <span className="font-semibold text-[#C49A45]">
+                    4.9 ★★★★★
+                  </span>
                 </div>
               </div>
 
@@ -311,17 +314,22 @@ export default function DemoPeluqueriaPage() {
                 ["Corte infantil", "10 €"],
               ].map(([t, p]) => (
                 <div key={t} className="flex items-center gap-4 py-3">
-                  <div className="text-sm font-semibold text-[#FFF8EC]">{t}</div>
-                  <div className="min-w-0 flex-1 border-b border-dotted border-[rgba(255,248,236,0.35)]" />
-                  <div className="text-sm font-semibold text-[#D8AE62]">{p}</div>
+                  <div className="text-sm font-semibold text-[#241C17]">{t}</div>
+                  <div className="min-w-0 flex-1 border-b border-dotted border-[rgba(36,28,23,0.10)]" />
+                  <div className="text-sm font-semibold text-[#C49A45]">{p}</div>
                 </div>
               ))}
-              <div className="mt-6 h-px bg-white/12" />
+              <div className="mt-6 h-px bg-[rgba(36,28,23,0.10)]" />
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div className="text-sm text-[#FFF8EC]/85">
+                <div className="text-sm text-[#5F5146]">
                   Reserva por WhatsApp y te confirmamos hora.
                 </div>
-                <ButtonA href={WHATSAPP_DEMO} target="_blank" rel="noopener noreferrer">
+                <ButtonA
+                  href={WHATSAPP_DEMO}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:bg-[#D7AE63] text-[#241C17]"
+                >
                   Reservar por WhatsApp
                 </ButtonA>
               </div>
