@@ -130,37 +130,37 @@ function DemoHeader() {
 function BarberSignCard() {
   return (
     <div className="relative">
-      <div className="absolute -inset-10 -z-10 rounded-[2.5rem] bg-gradient-to-br from-[#C49A45]/18 via-[#3A3835]/14 to-transparent blur-3xl" />
-      <div className="rounded-[1.75rem] border border-white/10 bg-[#2B2A28] p-6 shadow-[0_26px_70px_rgba(43,42,40,0.30)]">
+      <div className="absolute -inset-10 -z-10 rounded-[2.5rem] bg-gradient-to-br from-[#C49A45]/18 via-[#F2E2CF]/60 to-transparent blur-3xl" />
+      <div className="rounded-[1.75rem] border border-[rgba(36,28,23,0.10)] bg-gradient-to-b from-[#F7EBDD] to-[#F2E2CF] p-6 shadow-[0_18px_45px_rgba(36,28,23,0.12)]">
         <div className="flex items-start justify-between gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/5 px-3 py-1 text-xs font-semibold text-[#D6AD5C]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-3 py-1 text-xs font-semibold text-[#241C17]">
               Abierto hoy
             </div>
-            <div className="mt-4 text-3xl font-semibold tracking-tight text-[#FFF8EC]">
+            <div className="mt-4 text-3xl font-semibold tracking-tight text-[#241C17]">
               10:00 - 20:00
             </div>
-            <div className="mt-2 text-sm text-[#FFF8EC]/85">
+            <div className="mt-2 text-sm text-[#5F5146]">
               Corte · Barba · Degradado
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-right">
-            <div className="text-xs font-semibold text-[#FFF8EC]/80">Valoración</div>
-            <div className="mt-1 text-sm font-semibold text-[#FFF8EC]">
+          <div className="rounded-2xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-4 py-3 text-right">
+            <div className="text-xs font-semibold text-[#5F5146]">Valoración</div>
+            <div className="mt-1 text-sm font-semibold text-[#241C17]">
               4.9 ★★★★★
             </div>
-            <div className="mt-1 text-xs text-[#FFF8EC]/75">Orihuela</div>
+            <div className="mt-1 text-xs text-[#5F5146]">Orihuela</div>
           </div>
         </div>
 
         <div className="mt-6 grid gap-3">
-          <div className="rounded-2xl border border-white/12 bg-[#3A3835] p-4">
-            <div className="text-xs font-semibold text-[#FFF8EC]/80">Recomendado</div>
-            <div className="mt-1 text-sm font-semibold text-[#FFF8EC]">
+          <div className="rounded-2xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] p-4 shadow-[0_12px_30px_rgba(36,28,23,0.08)]">
+            <div className="text-xs font-semibold text-[#5F5146]">Recomendado</div>
+            <div className="mt-1 text-sm font-semibold text-[#241C17]">
               Corte + barba
             </div>
-            <div className="mt-1 text-sm font-semibold text-[#D6AD5C]">18 €</div>
+            <div className="mt-1 text-sm font-semibold text-[#C49A45]">18 €</div>
           </div>
 
           <ButtonA
@@ -193,8 +193,8 @@ export default function DemoPeluqueriaPage() {
         <section id="inicio" className="relative overflow-hidden">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -top-52 left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-[#C49A45]/14 blur-3xl" />
-            <div className="absolute -bottom-64 right-[-140px] h-[620px] w-[620px] rounded-full bg-[#3A3835]/12 blur-3xl" />
-            <div className="absolute -bottom-72 left-[-160px] h-[520px] w-[520px] rounded-full bg-[#2B2A28]/10 blur-3xl" />
+            <div className="absolute -bottom-64 right-[-140px] h-[620px] w-[620px] rounded-full bg-[#F2E2CF] blur-3xl opacity-70" />
+            <div className="absolute -bottom-72 left-[-160px] h-[520px] w-[520px] rounded-full bg-[#E9DDC7] blur-3xl opacity-70" />
           </div>
           <Container>
             <div className="grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-2 lg:gap-14">
@@ -416,13 +416,13 @@ export default function DemoPeluqueriaPage() {
 
         <section id="contacto" className="py-16 sm:py-24">
           <Container>
-            <div className="rounded-[2.25rem] border border-white/10 bg-[#2B2A28] p-8 shadow-[0_26px_70px_rgba(43,42,40,0.24)] sm:p-10">
+            <div className="rounded-[2.25rem] border border-[rgba(36,28,23,0.10)] bg-gradient-to-b from-[#F7EBDD] to-[#F2E2CF] p-8 shadow-[0_18px_45px_rgba(36,28,23,0.12)] sm:p-10">
               <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
                 <div className="lg:col-span-7">
-                  <h2 className="text-2xl font-semibold tracking-tight text-[#FFF8EC] sm:text-3xl">
+                  <h2 className="text-2xl font-semibold tracking-tight text-[#241C17] sm:text-3xl">
                     Reserva tu cita en Barbería Nova
                   </h2>
-                  <p className="mt-4 text-lg leading-8 text-[#FFF8EC]/85">
+                  <p className="mt-4 text-lg leading-8 text-[#5F5146]">
                     Esta demo es un ejemplo visual. OriWeb puede adaptar una web
                     similar a la imagen de tu negocio.
                   </p>
@@ -438,7 +438,7 @@ export default function DemoPeluqueriaPage() {
                   </ButtonA>
                   <Link
                     href="/"
-                    className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/14 bg-white/5 px-5 py-3 text-sm font-semibold text-[#FFF8EC] hover:bg-white/10 sm:mt-0 sm:w-auto"
+                    className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-5 py-3 text-sm font-semibold text-[#241C17] hover:bg-[#F2E2CF] sm:mt-0 sm:w-auto"
                   >
                     Volver a OriWeb
                   </Link>
@@ -449,14 +449,14 @@ export default function DemoPeluqueriaPage() {
         </section>
       </main>
 
-      <footer className="border-t border-[rgba(43,42,40,0.14)] bg-[#2B2A28]">
+      <footer className="border-t border-[rgba(36,28,23,0.10)] bg-[#F2E2CF]">
         <Container>
           <div className="flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <div className="font-semibold text-[#FFF8EC]">Barbería Nova</div>
-              <div className="mt-1 text-sm text-[#FFF8EC]/80">
+              <div className="font-semibold text-[#241C17]">Barbería Nova</div>
+              <div className="mt-1 text-sm text-[#5F5146]">
                 Demo ficticia creada por{" "}
-                <Link href="/" className="font-semibold text-[#D8AE62] hover:underline">
+                <Link href="/" className="font-semibold text-[#C49A45] hover:underline">
                   OriWeb
                 </Link>
               </div>
@@ -464,7 +464,7 @@ export default function DemoPeluqueriaPage() {
             <div className="flex items-center gap-3">
               <Link
                 href="/"
-                className="rounded-full border border-white/14 bg-white/5 px-4 py-2 text-sm font-semibold text-[#FFF8EC] hover:bg-white/10"
+                className="rounded-full border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-4 py-2 text-sm font-semibold text-[#241C17] hover:bg-[#F7EBDD]"
               >
                 Volver a OriWeb
               </Link>
