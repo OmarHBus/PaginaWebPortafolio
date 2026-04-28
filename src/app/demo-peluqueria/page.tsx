@@ -10,6 +10,11 @@ export const metadata: Metadata = {
 const WHATSAPP_DEMO =
   "https://wa.me/34687589183?text=Hola%2C%20he%20visto%20la%20demo%20de%20peluquer%C3%ADa%20y%20quiero%20informaci%C3%B3n%20para%20mi%20negocio";
 
+const CTA_STYLE =
+  "bg-[#C49A45] text-[#241C17] shadow-[0_14px_32px_rgba(196,154,69,0.26)] hover:bg-[#D7AE63] active:brightness-95 focus-visible:ring-[#C49A45] focus-visible:ring-offset-[#F5EFE3]";
+const CTA_STYLE_SECONDARY =
+  "border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] text-[#241C17] hover:bg-[#F2E2CF] focus-visible:ring-[#C49A45] focus-visible:ring-offset-[#F5EFE3]";
+
 const NOVA = {
   bg: "#F5EFE3",
   surface: "#E9DDC7",
@@ -44,8 +49,8 @@ function ButtonA(props: {
       className={cx(
         "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
         variant === "primary"
-          ? "bg-[#C49A45] text-[#1F1A17] shadow-[0_14px_32px_rgba(196,154,69,0.26)] hover:bg-[#D8AE62] active:brightness-95 focus-visible:ring-[#C49A45] focus-visible:ring-offset-[#F5EFE3]"
-          : "border border-[#C7A77A] bg-[#FFF8EC] text-[#3A2417] hover:bg-[#E9DDC7] focus-visible:ring-[#3A3835] focus-visible:ring-offset-[#F5EFE3]",
+          ? CTA_STYLE
+          : CTA_STYLE_SECONDARY,
         props.className,
       )}
     >
@@ -107,11 +112,8 @@ function DemoHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <ButtonA
-              href={WHATSAPP_DEMO}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            {/* Botón opcional en header */}
+            <ButtonA href={WHATSAPP_DEMO} target="_blank" rel="noopener noreferrer">
               Reservar
             </ButtonA>
             <Link
@@ -162,15 +164,6 @@ function BarberSignCard() {
             </div>
             <div className="mt-1 text-sm font-semibold text-[#C49A45]">18 €</div>
           </div>
-
-          <ButtonA
-            href={WHATSAPP_DEMO}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full"
-          >
-            Reservar por WhatsApp
-          </ButtonA>
         </div>
       </div>
     </div>
@@ -247,16 +240,34 @@ export default function DemoPeluqueriaPage() {
             <SectionTitle
               kicker="Servicios"
               title="Servicios"
-              text="Una carta sencilla, pensada para que el cliente elija rápido."
+              text="Servicios de barbería pensados para que el cliente elija rápido y sepa exactamente qué incluye cada opción."
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                ["Corte de pelo", "Corte clásico o moderno, a tu estilo."],
-                ["Corte + barba", "Pack completo para salir impecable."],
-                ["Arreglo de barba", "Perfilado, arreglo y cuidado."],
-                ["Degradado", "Fade limpio con acabado profesional."],
-                ["Peinado", "Textura y forma para tu tipo de pelo."],
-                ["Corte infantil", "Rápido, cómodo y con buen resultado."],
+                [
+                  "Corte de pelo",
+                  "Corte limpio y adaptado a tu cabeza, con acabado y detalles para que dure bien.",
+                ],
+                [
+                  "Corte + barba",
+                  "La combinación completa: corte y barba equilibrados, con perfilado y acabado.",
+                ],
+                [
+                  "Degradado",
+                  "Fade preciso con transiciones suaves y terminación cuidada en nuca y patillas.",
+                ],
+                [
+                  "Arreglo de barba",
+                  "Perfilado, recorte y definición. Te dejamos la barba ordenada y con forma.",
+                ],
+                [
+                  "Corte infantil",
+                  "Rápido y cómodo, con un resultado limpio (y sin dramas).",
+                ],
+                [
+                  "Peinado y acabado",
+                  "Textura y forma según tu estilo: mate, brillo o natural, con productos de acabado.",
+                ],
               ].map(([t, d]) => (
                 <div
                   key={t}
@@ -275,6 +286,143 @@ export default function DemoPeluqueriaPage() {
                       ✦
                     </div>
                   </div>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <Container>
+            <SectionTitle
+              kicker="Experiencia"
+              title="Un espacio pensado para cuidar tu estilo"
+              text="Cuidamos el detalle para que te sientas cómodo y salgas con un corte que encaje contigo."
+            />
+            <div className="mt-10 grid gap-4 lg:grid-cols-12">
+              <div className="lg:col-span-7">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {[
+                    ["Atención cercana", "Trato directo, sin prisas y con confianza."],
+                    ["Ambiente cómodo", "Un local tranquilo, limpio y agradable."],
+                    [
+                      "Asesoramiento",
+                      "Te recomendamos según tu tipo de pelo, rostro y estilo.",
+                    ],
+                    [
+                      "Citas por WhatsApp",
+                      "Reserva rápido y te confirmamos hora sin complicaciones.",
+                    ],
+                    [
+                      "Productos de acabado",
+                      "Textura, fijación y cuidado para pelo y barba.",
+                    ],
+                  ].map(([t, d]) => (
+                    <div
+                      key={t}
+                      className="rounded-3xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] p-6 shadow-[0_14px_35px_rgba(36,28,23,0.08)]"
+                    >
+                      <div className="text-base font-semibold text-[#241C17]">
+                        {t}
+                      </div>
+                      <p className="mt-2 text-sm leading-7 text-[#5F5146]">{d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="lg:col-span-5">
+                <div className="rounded-[2rem] border border-[rgba(36,28,23,0.10)] bg-gradient-to-b from-[#F7EBDD] to-[#F2E2CF] p-8 shadow-[0_18px_45px_rgba(36,28,23,0.12)]">
+                  <div className="text-sm font-semibold text-[#241C17]">
+                    Detalles del local
+                  </div>
+                  <div className="mt-4 flex h-48 items-center justify-center rounded-2xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] text-sm font-semibold text-[#5F5146]">
+                    Foto del local (placeholder)
+                  </div>
+                  <div className="mt-6 text-sm text-[#5F5146]">
+                    Este bloque es un placeholder fácil de sustituir por una foto real desde{" "}
+                    <span className="font-semibold text-[#241C17]">/public</span>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <Container>
+            <SectionTitle
+              kicker="Por qué elegirnos"
+              title="Por qué elegir Barbería Nova"
+              text="Cuatro motivos sencillos que marcan la diferencia cuando buscas tu barbería en Orihuela."
+            />
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["Trato cercano", "Te escuchamos y ajustamos el corte a tu estilo."],
+                ["A tu medida", "Cortes adaptados a cada cliente, sin copiar y pegar."],
+                ["Horarios claros", "Información visible para que vengas sin dudas."],
+                ["Reserva fácil", "WhatsApp para pedir cita sin llamadas interminables."],
+              ].map(([t, d]) => (
+                <div
+                  key={t}
+                  className="rounded-3xl border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] p-6 shadow-[0_14px_35px_rgba(36,28,23,0.08)]"
+                >
+                  <div className="text-sm font-semibold text-[#C49A45]">✦</div>
+                  <div className="mt-2 text-base font-semibold text-[#241C17]">
+                    {t}
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-[#5F5146]">{d}</p>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <Container>
+            <SectionTitle
+              kicker="Equipo"
+              title="Nuestro equipo"
+              text="Profesionales especializados en corte, barba y asesoramiento de estilo."
+            />
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                [
+                  "Álex",
+                  "Especialista en degradados",
+                  "Precisión en transiciones, acabados limpios y buen ojo para el detalle.",
+                ],
+                [
+                  "Samir",
+                  "Corte clásico y barba",
+                  "Clásicos bien hechos, perfilados elegantes y barba con forma.",
+                ],
+                [
+                  "Dani",
+                  "Estilo moderno y peinados",
+                  "Cortes actuales, textura y acabado para un look moderno.",
+                ],
+              ].map(([name, role, desc]) => (
+                <div
+                  key={name}
+                  className="rounded-[2rem] border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] p-6 shadow-[0_18px_45px_rgba(36,28,23,0.10)]"
+                >
+                  <div className="h-44 rounded-2xl border border-[rgba(36,28,23,0.10)] bg-gradient-to-br from-[#F7EBDD] via-[#FFF8F0] to-[#F2E2CF] p-5">
+                    <div className="text-sm font-semibold text-[#241C17]">
+                      Foto del barbero
+                    </div>
+                    <div className="mt-2 text-sm text-[#5F5146]">
+                      Placeholder (fácil de sustituir)
+                    </div>
+                  </div>
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <div className="text-lg font-semibold text-[#241C17]">
+                      {name}
+                    </div>
+                    <div className="rounded-full border border-[rgba(36,28,23,0.10)] bg-[#F7EBDD] px-3 py-1 text-xs font-semibold text-[#5F5146]">
+                      {role}
+                    </div>
+                  </div>
+                  <p className="mt-3 text-sm leading-7 text-[#5F5146]">{desc}</p>
                 </div>
               ))}
             </div>
@@ -324,14 +472,6 @@ export default function DemoPeluqueriaPage() {
                 <div className="text-sm text-[#5F5146]">
                   Reserva por WhatsApp y te confirmamos hora.
                 </div>
-                <ButtonA
-                  href={WHATSAPP_DEMO}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:bg-[#D7AE63] text-[#241C17]"
-                >
-                  Reservar por WhatsApp
-                </ButtonA>
               </div>
             </div>
           </Container>
