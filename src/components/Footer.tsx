@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 
@@ -8,8 +9,17 @@ export function Footer() {
       <Container>
         <div className="flex flex-col gap-8 py-12 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <div className="font-semibold tracking-tight text-[#F9FAFB]">
-              {SITE.name}
+            <div className="inline-flex items-center">
+              <div className="rounded-2xl bg-white/5 p-3 ring-1 ring-inset ring-white/10">
+                <Image
+                  src="/oriweb-logo.png"
+                  alt="OriWeb logo"
+                  width={160}
+                  height={44}
+                  sizes="160px"
+                  className="h-auto w-[140px]"
+                />
+              </div>
             </div>
             <div className="mt-1 text-sm text-[#CBD5E1]">{SITE.tagline}</div>
             <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">

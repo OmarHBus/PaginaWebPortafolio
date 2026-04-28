@@ -1,6 +1,7 @@
  "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -59,16 +60,18 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/70 backdrop-blur">
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="#inicio" className="group inline-flex items-center gap-2">
-            <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/5 ring-1 ring-inset ring-white/10">
-              <span className="h-2.5 w-2.5 rounded-full bg-[#22D3EE] shadow-[0_0_20px_rgba(34,211,238,0.55)]" />
-            </span>
-            <span className="text-sm font-semibold tracking-tight text-[#F9FAFB]">
-              {SITE.name}
-            </span>
-            <span className="hidden text-xs text-[#CBD5E1] sm:inline">
-              · Orihuela
-            </span>
+          <Link href="/" className="group inline-flex items-center gap-3">
+            <div className="relative">
+              <Image
+                src="/oriweb-logo.png"
+                alt="OriWeb logo"
+                width={180}
+                height={48}
+                priority
+                sizes="(max-width: 640px) 150px, 180px"
+                className="h-auto w-[140px] sm:w-[150px] lg:w-[180px]"
+              />
+            </div>
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm text-[#CBD5E1] lg:flex">
