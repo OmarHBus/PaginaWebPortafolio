@@ -63,7 +63,7 @@ export function Header() {
           <Link href="/" className="group inline-flex items-center gap-3">
             <div className="relative">
               <Image
-                src="/oriweb-logo.png"
+                src="/logoMiWebPortafolio.png"
                 alt="OriWeb logo"
                 width={180}
                 height={48}

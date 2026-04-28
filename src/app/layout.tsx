@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Diseño y desarrollo páginas web para peluquerías, barberías, restaurantes y pequeños negocios locales en Orihuela.",
   icons: {
     // Si no tienes favicon separado todavía, se usará el logo temporalmente.
-    icon: [{ url: "/favicon.png" }, { url: "/oriweb-logo.png" }],
+    icon: [{ url: "/favicon.png" }, { url: "/logoMiWebPortafolio.png" }],
   },
 };
 

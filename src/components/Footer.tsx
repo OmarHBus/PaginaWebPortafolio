@@ -12,7 +12,7 @@ export function Footer() {
             <div className="inline-flex items-center">
               <div className="rounded-2xl bg-white/5 p-3 ring-1 ring-inset ring-white/10">
                 <Image
-                  src="/oriweb-logo.png"
+                  src="/logoMiWebPortafolio.png"
                   alt="OriWeb logo"
                   width={160}
                   height={44}
