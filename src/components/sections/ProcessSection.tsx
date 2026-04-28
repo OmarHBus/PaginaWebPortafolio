@@ -34,7 +34,7 @@ export function ProcessSection() {
       <Container>
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold tracking-tight text-[#F9FAFB] sm:text-3xl">
-            Proceso en 5 pasos (sin complicaciones)
+            Proceso en 5 pasos
           </h2>
           <p className="max-w-2xl text-lg leading-8 text-[#CBD5E1]">
             Ordenado en escritorio y fácil de leer en móvil. Lo justo para

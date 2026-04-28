@@ -30,7 +30,7 @@ export function ProblemBenefit() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-5">
             <h2 className="text-2xl font-semibold tracking-tight text-[#F9FAFB] sm:text-3xl">
-              Una web te ayuda a convertir visitas en mensajes (y reservas)
+              Una web te ayuda a convertir visitas en mensajes
             </h2>
             <p className="mt-4 text-lg leading-8 text-[#CBD5E1]">
               En Orihuela pasa mucho: alguien te encuentra, mira dos fotos y se

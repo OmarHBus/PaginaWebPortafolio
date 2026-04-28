@@ -20,7 +20,7 @@ export function ForWhoSection() {
             </h2>
             <p className="mt-4 text-lg leading-8 text-[#CBD5E1]">
               Para negocios de Orihuela que quieren una web moderna, clara y con
-              lo importante a la vista (y contacto fácil por WhatsApp).
+              lo importante a la vista y contacto fácil por WhatsApp.
             </p>
           </div>
           <div className="lg:col-span-7">
