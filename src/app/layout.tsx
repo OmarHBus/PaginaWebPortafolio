@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OriWeb | Páginas web para negocios locales en Orihuela",
+  title: "OriuWeb | Páginas web para negocios locales en Orihuela",
   description:
     "Diseño y desarrollo páginas web para peluquerías, barberías, restaurantes y pequeños negocios locales en Orihuela.",
   icons: {

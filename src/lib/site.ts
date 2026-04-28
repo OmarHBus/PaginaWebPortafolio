@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "OriWeb",
+  name: "OriuWeb",
   tagline: "Páginas web para negocios locales en Orihuela",
   nav: [
     { label: "Inicio", href: "#inicio" },
@@ -11,6 +11,7 @@ export const SITE = {
   ],
   instagram: {
     href: "https://www.instagram.com/oriweb_/",
+    // TODO: actualizar Instagram cuando se cree la cuenta de OriuWeb.
     label: "@oriweb_",
   },
   whatsapp: {

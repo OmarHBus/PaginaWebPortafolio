@@ -1,7 +1,6 @@
  "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -61,17 +60,10 @@ export function Header() {
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="group inline-flex items-center gap-3">
-            <div className="relative">
-              <Image
-                src="/oriweb_logo.svg"
-                alt="OriWeb logo"
-                width={180}
-                height={48}
-                priority
-                sizes="(max-width: 640px) 150px, 180px"
-                className="h-auto w-[140px] bg-transparent sm:w-[150px] lg:w-[180px]"
-              />
-            </div>
+            {/* El SVG actual incluye el texto anterior; evitamos mostrar marca incorrecta. */}
+            <span className="text-base font-semibold tracking-tight text-[#F9FAFB] sm:text-lg">
+              {SITE.name}
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm text-[#CBD5E1] lg:flex">

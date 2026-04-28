@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 
@@ -10,14 +9,10 @@ export function Footer() {
         <div className="flex flex-col gap-8 py-12 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <div className="inline-flex items-center">
-              <Image
-                src="/oriweb_logo.svg"
-                alt="OriWeb logo"
-                width={160}
-                height={44}
-                sizes="160px"
-                className="h-auto w-[140px] bg-transparent"
-              />
+              {/* El SVG actual incluye el texto anterior; evitamos mostrar marca incorrecta. */}
+              <div className="font-semibold tracking-tight text-[#F9FAFB]">
+                {SITE.name}
+              </div>
             </div>
             <div className="mt-1 text-sm text-[#CBD5E1]">{SITE.tagline}</div>
             <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">

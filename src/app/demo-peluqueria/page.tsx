@@ -3,8 +3,9 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 
 export const metadata: Metadata = {
-  title: "Demo peluquería | OriWeb",
-  description: "Demo estática de página web para peluquería o barbería creada por OriWeb.",
+  title: "Demo peluquería | OriuWeb",
+  description:
+    "Demo estática de página web para peluquería o barbería creada por OriuWeb.",
 };
 
 const WHATSAPP_DEMO =
@@ -120,7 +121,7 @@ function DemoHeader() {
               href="/"
               className="hidden rounded-full border border-[rgba(43,42,40,0.14)] bg-transparent px-4 py-2 text-sm font-semibold text-[#3A3835] hover:bg-[#E9DDC7] sm:inline-flex"
             >
-              Volver a OriWeb
+              Volver a OriuWeb
             </Link>
           </div>
         </div>
@@ -194,7 +195,7 @@ export default function DemoPeluqueriaPage() {
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <div className="inline-flex items-center gap-2 rounded-full border border-[rgba(43,42,40,0.14)] bg-[#FFF8EC] px-3 py-1 text-xs font-semibold text-[#3A3835]">
-                    Barbería ficticia · Demo OriWeb
+                    Barbería ficticia · Demo OriuWeb
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full border border-[rgba(43,42,40,0.14)] bg-[#FFF8EC] px-3 py-1 text-xs font-semibold text-[#3A3835]">
                     Orihuela
@@ -569,7 +570,7 @@ export default function DemoPeluqueriaPage() {
                     Reserva tu cita en Barbería Nova
                   </h2>
                   <p className="mt-4 text-lg leading-8 text-[#5F5146]">
-                    Esta demo es un ejemplo visual. OriWeb puede adaptar una web
+                    Esta demo es un ejemplo visual. OriuWeb puede adaptar una web
                     similar a la imagen de tu negocio.
                   </p>
                 </div>
@@ -586,7 +587,7 @@ export default function DemoPeluqueriaPage() {
                     href="/"
                     className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-5 py-3 text-sm font-semibold text-[#241C17] hover:bg-[#F2E2CF] sm:mt-0 sm:w-auto"
                   >
-                    Volver a OriWeb
+                    Volver a OriuWeb
                   </Link>
                 </div>
               </div>
@@ -603,7 +604,7 @@ export default function DemoPeluqueriaPage() {
               <div className="mt-1 text-sm text-[#5F5146]">
                 Demo ficticia creada por{" "}
                 <Link href="/" className="font-semibold text-[#C49A45] hover:underline">
-                  OriWeb
+                  OriuWeb
                 </Link>
               </div>
             </div>
@@ -612,7 +613,7 @@ export default function DemoPeluqueriaPage() {
                 href="/"
                 className="rounded-full border border-[rgba(36,28,23,0.10)] bg-[#FFF8F0] px-4 py-2 text-sm font-semibold text-[#241C17] hover:bg-[#F7EBDD]"
               >
-                Volver a OriWeb
+                Volver a OriuWeb
               </Link>
             </div>
           </div>
