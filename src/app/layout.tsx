@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/oriuweb.png",
-    shortcut: "/oriuweb.png",
-    apple: "/oriuweb.png",
+    icon: "/oriuWebIcon.png",
+    shortcut: "/oriuWebIcon.png",
+    apple: "/oriuWebIcon.png",
   },
   openGraph: {
     title: "OriuWeb | Páginas web para negocios locales en Orihuela",
