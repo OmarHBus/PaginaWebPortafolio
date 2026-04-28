@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description:
     "Diseño y desarrollo páginas web para peluquerías, barberías, restaurantes y pequeños negocios locales en Orihuela.",
   icons: {
-    icon: "/logoMiWebPortafolio.png",
-    shortcut: "/logoMiWebPortafolio.png",
-    apple: "/logoMiWebPortafolio.png",
+    icon: "/oriuweb.png",
+    shortcut: "/oriuweb.png",
+    apple: "/oriuweb.png",
   },
 };
 

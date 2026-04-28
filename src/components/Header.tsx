@@ -1,6 +1,7 @@
  "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -60,10 +61,15 @@ export function Header() {
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="group inline-flex items-center gap-3">
-            {/* El SVG actual incluye el texto anterior; evitamos mostrar marca incorrecta. */}
-            <span className="text-base font-semibold tracking-tight text-[#F9FAFB] sm:text-lg">
-              {SITE.name}
-            </span>
+            <Image
+              src="/oriuweb_logo.svg"
+              alt="Logo de OriuWeb"
+              width={180}
+              height={60}
+              priority
+              sizes="(max-width: 640px) 150px, 180px"
+              className="h-auto w-[140px] bg-transparent sm:w-[150px] lg:w-[180px]"
+            />
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm text-[#CBD5E1] lg:flex">
