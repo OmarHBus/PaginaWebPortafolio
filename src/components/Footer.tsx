@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <div className="inline-flex items-center">
               <Image
-                src="/oriuweb_logo.svg"
+                src="/oriuweb_logo_compacto.svg"
                 alt="Logo de OriuWeb"
                 width={160}
                 height={54}

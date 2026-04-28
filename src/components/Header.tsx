@@ -62,13 +62,13 @@ export function Header() {
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="group inline-flex items-center gap-3">
             <Image
-              src="/oriuweb_logo.svg"
+              src="/oriuweb_logo_compacto.svg"
               alt="Logo de OriuWeb"
               width={180}
               height={60}
               priority
               sizes="(max-width: 640px) 150px, 180px"
-              className="h-auto w-[140px] bg-transparent sm:w-[150px] lg:w-[180px]"
+              className="h-auto w-[140px] bg-transparent sm:w-[150px] lg:w-[170px]"
             />
           </Link>
 
